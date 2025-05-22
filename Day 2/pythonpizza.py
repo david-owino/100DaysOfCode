@@ -6,9 +6,10 @@
  
 
 print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M or L: ")
-pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
-extra_cheese = input("Do you want extra cheese? Y or N: ")
+size = input("What size pizza do you want? S, M or L: ").upper()
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ").upper()
+extra_cheese = input("Do you want extra cheese? Y or N: ").upper()
+# Initialize the final bill to 0
 final_bill = 0
 
 #calculate bill based pn price
@@ -18,6 +19,8 @@ elif size == "M":
     final_bill += 20
 elif size == "L":
     final_bill += 25
+else:
+    print("Invalid size. Please choose S, M, or L.")
 
 #calculate bill based on extra pepperoni
 if pepperoni == "Y":
