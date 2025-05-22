@@ -1,3 +1,10 @@
+# This is a simple pizza ordering program that calculates the final bill based on user input.
+# It prompts the user for the size of the pizza, whether they want pepperoni and/or extra cheese,
+# and then calculates the total cost based on the choices made.
+# The program uses conditional statements to determine the cost of the pizza based on the size and toppings.
+# The final bill is then printed to the console.
+ 
+
 print("Welcome to Python Pizza Deliveries!")
 size = input("What size pizza do you want? S, M or L: ")
 pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
