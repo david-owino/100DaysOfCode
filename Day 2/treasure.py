@@ -34,9 +34,9 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-start_game = input("Are you ready to start your Journey?").upper()
+start_game = input("Are you ready to start your Journey, Yes or No?").upper()
 
-if start_game == "Y":
+if start_game == "YES":
     direction = input("Which way will you go, left or right?").upper()
     if direction == "LEFT":
         action = input("Will you swim or wait?").upper()
