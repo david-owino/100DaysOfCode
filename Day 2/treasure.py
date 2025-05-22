@@ -37,13 +37,13 @@ print("Your mission is to find the treasure.")
 start_game = input("Are you ready to start your Journey, Yes or No?").upper()
 
 if start_game == "YES":
-    direction = input("Which way will you go, left or right?").upper()
+    direction = input("You are at a crossroad!!, Which way will you go, left or right?").upper()
     if direction == "LEFT":
-        action = input("Will you swim or wait?").upper()
+        action = input("You arrive at a river, Will you swim or wait?").upper()
         if action == "WAIT":
-            door = input("What color door are you picking, Red, Blue or Yellow?").upper()
+            door = input("A guide appears and asks you to choose a door, What color door are you picking, Red, Blue or Yellow?").upper()
             if door == "YELLOW":
-                print("You found the treasure, YOU WIN!!")
+                print("Congratulations, you chose the right path and you have found the treasure, YOU WIN!!")
             elif door == "RED":
                 print("You were burnt by fire, GAME OVER!!")
             elif door == "BLUE":
