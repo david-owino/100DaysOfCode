@@ -2,6 +2,7 @@ import random
 
 from hangman_words import word_list
 from hangman_art import stages, logo
+import hangman_words
 
 # TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 
@@ -25,8 +26,8 @@ correct_letters = []
 while not game_over:
 
     # TODO-6: - Update the code below to tell the user how many lives they have left.
-    print(f"****************************{guess}/6 LIVES LEFT****************************")
     guess = input("Guess a letter: ").lower()
+    print(f"****************************{guess}/6 LIVES LEFT****************************")
 
     # TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
     if guess in correct_letters:
